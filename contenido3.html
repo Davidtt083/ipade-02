@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/gnc2otm.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="bgcontenedor1" id="bgcontenedor1">
+    <!-- Página 1 -->
+    <div id="page1" class="pagina">
+      <h1 class="titulo">En general, ¿cómo evalúas a Nayeli Ucha como emprendedora?</h1>
+      <div class="stars" data-page="1">
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+        valoración?</div>
+      <textarea id="comment1" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
+      <button onclick="goToPageIntermediate('intermediate1', 'item1')">Siguiente</button>
+    </div>
+
+    <!-- Página intermedia 1 -->
+    <div id="intermediate1" class="pagina hidden">
+      <h1 class="titulo">En general, ¿cómo evalúas a Nayeli Ucha como emprendedora?</h1>
+      <p style="color: white; font-size: 18px;">Ahora, evalúa el trabajo de Nayeli como emprendedora con base en los siguientes criterios:</p><br><br>
+      <div class="conte_imagenes" id="item1">
+        <div class="item" id="item1" onclick="goToPage('page2')">
+          <img src="images/img2_01_sm.png" alt="Imagen 1">
+          <p class="texto_imagen">Proponer ideas relevantes</p>
+        </div>
+        <div class="item_sm" id="item1">
+          <img src="images/img2_02_sm.png" alt="Imagen 2">
+          <p class="texto_imagen">Atraer recursos</p>
+        </div>
+        <div class="item_sm" id="item1">
+          <img src="images/img2_03_sm.png" alt="Imagen 3">
+          <p class="texto_imagen">Validar modelos de negocio</p>
+        </div>
+      </div>
+      <p style="color: white; font-size: 18px; text-align: center; width: 88%"><i>Haz clic sobre cada criterio para
+          brindar tu valoración.
+          Una vez que hayas terminado, continúa revisando el recurso interactivo.</i></p>
+    </div>
+
+    <!-- Página 2 -->
+    <div id="page2" class="pagina hidden">
+      <h1 class="titulo">¿Qué tan buena es Nayeli proponiendo ideas relevantes? </h1>
+      <div class="stars" data-page="2">
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+        valoración?</div>
+      <textarea id="comment2" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
+      <button onclick="goToPageIntermediate('intermediate2', 'item2')">Siguiente</button>
+    </div>
+
+    <!-- Página intermedia 2 -->
+    <div id="intermediate2" class="pagina hidden">
+      <h1 class="titulo">¿Cómo evalúas a Nayeli Ucha como emprendedora?</h1>
+      <p style="color: white; font-size: 18px;">Ahora, evalúa el trabajo de Nayeli como emprendedora con base en los siguientes criterios:</p><br><br>
+      <div class="conte_imagenes" id="item2">
+        <div class="item_select" id="item2">
+          <img src="images/img2_01_select.png" alt="Imagen 1">
+          <p class="texto_imagen">Proponer ideas relevantes</p>
+        </div>
+        <div class="item" id="item2" onclick="goToPage('page3')">
+          <img src="images/img2_02_sm.png" alt="Imagen 2">
+          <p class="texto_imagen">Atraer recursos</p>
+        </div>
+        <div class="item_sm" id="item2">
+          <img src="images/img2_03_sm.png" alt="Imagen 3">
+          <p class="texto_imagen">Validar modelos de negocio</p>
+        </div>
+      </div>
+      <p style="color: white; font-size: 18px; text-align: center; width: 88%"><i>Haz clic sobre cada criterio para
+          brindar tu valoración.
+          Una vez que hayas terminado, continúa revisando el recurso interactivo.</i></p>
+    </div>
+
+    <!-- Página 3 -->
+    <div id="page3" class="pagina hidden">
+      <h1 class="titulo">¿Qué tan buena es Nayeli atrayendo recursos para su empresa?</h1>
+      <div class="stars" data-page="3">
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+        valoración?</div>
+      <textarea id="comment3" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
+      <button onclick="goToPageIntermediate('intermediate3', 'item3')">Siguiente</button>
+    </div>
+
+    <!-- Página intermedia 3 -->
+    <div id="intermediate3" class="pagina hidden">
+      <h1 class="titulo">¿Cómo evalúas a Nayeli Ucha como emprendedora?</h1>
+      <p style="color: white; font-size: 18px;">Ahora, evalúa el trabajo de Nayeli como emprendedora con base en los siguientes criterios:</p><br><br>
+      <div class="conte_imagenes" id="item3">
+        <div class="item_select" id="item3">
+          <img src="images/img2_01_select.png" alt="Imagen 1">
+          <p class="texto_imagen">Proponer ideas relevantes</p>  
+        </div>
+        <div class="item_select" id="item3">
+          <img src="images/img2_02_select.png" alt="Imagen 2">
+          <p class="texto_imagen">Atraer recursos</p>
+        </div>
+        <div class="item"  id="item3" onclick="goToPage('page4')">
+          <img src="images/img2_03_sm.png" alt="Imagen 3">
+          <p class="texto_imagen">Validar modelos de negocio</p>
+        </div>
+      </div>
+      <p style="color: white; font-size: 18px; text-align: center; width: 88%"><i>Haz clic sobre cada criterio para
+          brindar tu valoración.
+          Una vez que hayas terminado, continúa revisando el recurso interactivo.</i></p>
+    </div>
+
+    <!-- Página 4 -->
+    <div id="page4" class="pagina hidden">
+      <h1 class="titulo">¿Qué tan buena es Nayeli validando modelos de negocio? </h1>
+      <div class="stars" data-page="4">
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+        <span class="star">&#9734;</span>
+      </div>
+      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+        valoración?</div>
+      <textarea id="comment4" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
+      <button onclick="goToPageIntermediate('intermediate4', 'item4')">Siguiente</button>
+    </div>
+
+
+       <!-- Página intermedia 4 -->
+       <div id="intermediate4" class="pagina hidden">
+        <h1 class="titulo">¿Cómo evalúas a Nayeli Ucha como emprendedora?</h1>
+        <p style="color: white; font-size: 18px;">Ahora, evalúa el trabajo de Nayeli como emprendedora con base en los siguientes criterios:</p><br><br>
+        <div class="conte_imagenes" id="item4">
+          <div class="item_select" id="item4">
+            <img src="images/img2_01_select.png" alt="Imagen 1">
+            <p class="texto_imagen">Proponer ideas relevantes</p>  
+          </div>
+          <div class="item_select" id="item4">
+            <img src="images/img2_02_select.png" alt="Imagen 2">
+            <p class="texto_imagen">Atraer recursos</p>
+          </div>
+          <div class="item_select"  id="item4" >
+            <img src="images/img2_03_select.png" alt="Imagen 3">
+            <p class="texto_imagen">Validar modelos de negocio</p>
+          </div>
+          <button style="position: absolute; top: 339px; left: 50;;" onclick="goToPageResults()">Siguiente</button>
+        </div>
+       
+        <p style="color: white; font-size: 18px; text-align: center; width: 88%"><i>Haz clic sobre cada criterio para
+            brindar tu valoración.
+            Una vez que hayas terminado, continúa revisando el recurso interactivo.</i></p>
+      </div>
+
+    <!-- Página de Resultados -->
+    <div id="results" class="pagina hidden">
+      <h1>Resultados</h1>
+      <div id="resultList"></div>
+      <button id="finalBtn">Descargar resultados</button>
+    </div>
+
+    <!-- Página Final -->
+    <div id="final" class="pagina hidden">
+      <h1>Gracias por tu feedback</h1>
+      <p>Has completado todas las puntuaciones.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+      const ratings = [];
+
+      function goToPage(pageId) {
+        document.querySelectorAll('div').forEach(div => {
+          div.classList.add('hidden');
+        });
+        document.getElementById('bgcontenedor1').classList.remove('hidden');
+        document.getElementById('explicacion').classList.remove('hidden');
+        document.getElementById(pageId).classList.remove('hidden');
+      }
+
+      function goToPageIntermediate(pageId, itemid) {
+        document.querySelectorAll('div').forEach(div => {
+          div.classList.add('hidden');
+        });
+        document.getElementById('bgcontenedor1').classList.remove('hidden');
+        document.getElementById(pageId).classList.remove('hidden');
+        document.querySelectorAll(`#${itemid}`).forEach(item => {
+          item.classList.remove('hidden');
+        });
+      }
+
+      document.querySelectorAll('.stars').forEach(starsDiv => {
+        const page = starsDiv.getAttribute('data-page');
+        starsDiv.addEventListener('click', function (event) {
+          if (event.target.classList.contains('star')) {
+            const stars = Array.from(starsDiv.children);
+            const rating = stars.indexOf(event.target) + 1;
+            ratings[page - 1] = {
+              rating: rating,
+              comment: document.getElementById(`comment${page}`).value
+            };
+            stars.forEach((star, index) => {
+              if (index < rating) {
+                star.classList.add('selected');
+              } else {
+                star.classList.remove('selected');
+              }
+            });
+          }
+        });
+      });
+
+      // Agrega los nombres de las secciones aquí
+      const sectionNames = ['General', 'Rentabilidad', 'Competitividad', 'Permanencia'];
+
+      function goToPageResults() {
+        goToPage('results');
+        const resultList = document.getElementById('resultList');
+        resultList.innerHTML = '';
+        ratings.forEach((result, index) => {
+          const resultItem = document.createElement('div');
+          const rating = Array(result.rating).fill('&#9733;').join('') + Array(5 - result.rating).fill('&#9734;').join('');
+          const comment = document.getElementById(`comment${index + 1}`).value; // Obtener el valor del área de texto
+          resultItem.innerHTML = `
+      <h2>${sectionNames[index]}</h2>
+      <p>Rating: ${rating}</p>
+      <p>Comentario: ${comment}</p>
+    `;
+          resultList.appendChild(resultItem);
+          resultList.classList.remove('hidden');
+        });
+      }
+
+      window.onload = function () {
+        document.getElementById('finalBtn').addEventListener('click', () => {
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF();
+
+          html2canvas(document.getElementById('bgcontenedor1')).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+            doc.addImage(imgData, 'PNG', 0, 0);
+            doc.save('Resultados_02.pdf');
+          });
+        });
+      }
+
+    </script>
+
+<script>
+  function redirigir() {
+           window.location.href = "contenido3.html";
+       }
+ </script>
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
+</body>
+
+</html>
