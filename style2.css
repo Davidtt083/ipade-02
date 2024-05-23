@@ -87,7 +87,7 @@ body {
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
-  background-image: url("bg_02_home.png");
+  background-image: url("home-bg.png");
   width: 100vw;
   /* Ancho del div igual al ancho de la ventana */
   height: 100vh;
@@ -771,6 +771,7 @@ body {
 table {
   width: 100%;
   max-height: 200px;
+  font-size: 15px;
   border-collapse: collapse;
 }
 
@@ -792,9 +793,15 @@ td:nth-child(1) {
   /* Establece un ancho de 50 píxeles para la tercera columna */
 }
 
+th:nth-child(2),
+td:nth-child(2) {
+  width: 50px;
+  /* Establece un ancho de 50 píxeles para la tercera columna */
+}
+
 th:nth-child(3),
 td:nth-child(3) {
-  width: 54px;
+  width: 294px;
   /* Establece un ancho de 50 píxeles para la tercera columna */
 }
 
@@ -854,8 +861,30 @@ td:nth-child(7) {
 
 .descargar {
   position: absolute;
-  margin-top: -42px;
+  margin-top: -103px;
   margin-left: 25px;
+  cursor: pointer;
+  color: #f1e4b2;
+  font-weight: bolder;
+  font-size: 101px;
+  transition: all 0.5s;
+}
+
+.descargar2 {
+  position: absolute;
+  margin-top: -103px;
+  margin-left: 830px;
+  cursor: pointer;
+  color: #f1e4b2;
+  font-weight: bolder;
+  font-size: 101px;
+  transition: all 0.5s;
+}
+
+.descargar3 {
+  position: absolute;
+  margin-top: -42px;
+  margin-left: 710px;
   cursor: pointer;
   padding: 5px;
   background: #002d74;
@@ -864,9 +893,30 @@ td:nth-child(7) {
   border: 1px solid #ffffff;
 }
 
+.descargar:hover {
+  color: #002d74;
+}
+
+.descargar2:hover {
+  color: #002d74;
+}
+
 .instruccion {
   position: absolute;
   color: #ffffff;
   margin-top: -36px;
   margin-left: 216px;
+}
+
+textarea {
+  width: 100%;
+  height: 38px;
+  box-sizing: border-box;
+  padding: 8px;
+  overflow: hidden;
+  background: #bc955c;
+  border: #bc955c;
+  /* Oculta las barras de desplazamiento */
+  resize: none;
+  /* Evita que el usuario pueda cambiar el tamaño del textarea */
 }

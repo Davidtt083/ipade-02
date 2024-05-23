@@ -194,7 +194,8 @@
           const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
           doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-          doc.save('Resultados_02.pdf'); // Descarga el archivo PDF
+          doc.save('Resultados_01.pdf'); // Descarga el archivo PDF
+          window.location.href = 'contenido3.html';
         });
       });
     };
