@@ -7,8 +7,8 @@
 }
 
 .very-specific-design {
-  width: 1000px;
-  height: 646px;
+  width: 1367px;
+  height: 704px;
   padding: 50px;
   text-align: center;
   background: rgb(255, 255, 255);
@@ -96,7 +96,7 @@ body {
 .bgcontenedor1 {
   background-size: cover;
   /* Ajusta la imagen para cubrir todo el div */
-  background-position: center;
+  background-position-y: -1px;
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
@@ -779,6 +779,7 @@ td {
   border: 1px solid #ddd;
   text-align: center;
   padding: 1px;
+  background-color: rgb(171, 171, 171);
 }
 
 th {
@@ -825,20 +826,20 @@ td:nth-child(7) {
 }
 
 .like-btn.active {
-  color: blue;
+  color: rgb(0, 45, 116);
   /* Estado de like */
 }
 
 .dislike-btn.active {
-  color: red;
+  color: rgb(206, 14, 45);
   /* Estado de dislike */
 }
 
 .conte_tabla {
   position: absolute;
-  width: 95%;
-  margin-left: 21px;
-  margin-top: 100px;
+  width: 83%;
+  margin-left: 83px;
+  margin-top: 132px;
 
 }
 
@@ -847,7 +848,7 @@ td:nth-child(7) {
   color: white;
   font-size: 20px;
   text-align: center;
-  margin-top: 68px;
+  margin-top: 87px;
   font-weight: bold;
   margin-left: 25px;
 }
@@ -855,7 +856,7 @@ td:nth-child(7) {
 .descargar {
   position: absolute;
   margin-top: -42px;
-  margin-left: 25px;
+  margin-left: 1063px;
   cursor: pointer;
   padding: 5px;
   background: #002d74;
