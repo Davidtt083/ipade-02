@@ -103,7 +103,7 @@ body {
   background-image: url("bg-01.png");
   width: 100vw;
   /* Ancho del div igual al ancho de la ventana */
-  height: 502px;
+  height: 47vw;
   background-color: #8f8696;
 }
 
@@ -171,7 +171,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   margin-left: 198px;
-  transform: translateX(10px);
+  transform: translateX(383px);
 }
 
 .flecha_izquierda {
@@ -771,7 +771,7 @@ body {
 table {
   width: 100%;
   max-height: 200px;
-  font-size: 15px;
+  font-size: 18px;
   border-collapse: collapse;
 }
 
@@ -854,11 +854,11 @@ td:nth-child(7) {
 .letras_blancas {
   position: absolute;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
-  margin-top: 87px;
+  margin-top: 113px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-left: 130px;
 }
 
 .descargar {
@@ -885,8 +885,8 @@ td:nth-child(7) {
 
 .descargar3 {
   position: absolute;
-  margin-top: -83px;
-  margin-left: 1143px;
+  margin-top: -474px;
+  margin-left: 1084px;
   cursor: pointer;
   padding: 5px;
   background: #002d74;
@@ -908,8 +908,9 @@ td:nth-child(7) {
 .instruccion {
   position: absolute;
   color: #ffffff;
-  margin-top: -36px;
-  margin-left: 216px;
+  margin-top: -48px;
+  margin-left: 239px;
+  font-size: 19px;
 }
 
 textarea {
@@ -923,4 +924,24 @@ textarea {
   /* Oculta las barras de desplazamiento */
   resize: none;
   /* Evita que el usuario pueda cambiar el tamaño del textarea */
+}
+
+.tablita {
+  margin-top: 57px;
+  margin-left: 45px;
+}
+
+.tablita_2 {
+  margin-top: 68px;
+  margin-left: 10px;
+}
+
+.letras_blancas_2 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 137px;
+  font-weight: bold;
+  margin-left: 94px;
 }

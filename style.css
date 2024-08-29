@@ -103,7 +103,7 @@ body {
   background-image: url("bg-01.png");
   width: 100vw;
   /* Ancho del div igual al ancho de la ventana */
-  height: 502px;
+  height: 47vw;
   background-color: #8f8696;
 }
 
@@ -171,7 +171,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   margin-left: 198px;
-  transform: translateX(10px);
+  transform: translateX(243px);
 }
 
 .flecha_izquierda {
@@ -772,6 +772,9 @@ table {
   width: 100%;
   max-height: 200px;
   border-collapse: collapse;
+  margin-top: 53px;
+  margin-left: 15px;
+  font-size: 19px;
 }
 
 th,
@@ -846,17 +849,17 @@ td:nth-child(7) {
 .letras_blancas {
   position: absolute;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
-  margin-top: 87px;
+  margin-top: 121px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-left: 91px;
 }
 
 .descargar {
   position: absolute;
-  margin-top: -42px;
-  margin-left: 1063px;
+  margin-top: -471px;
+  margin-left: 992px;
   cursor: pointer;
   padding: 5px;
   background: #002d74;
@@ -868,6 +871,22 @@ td:nth-child(7) {
 .instruccion {
   position: absolute;
   color: #ffffff;
-  margin-top: -36px;
-  margin-left: 216px;
+  margin-top: -48px;
+  margin-left: 239px;
+  font-size: 19px;
+}
+
+.tablita_2 {
+  margin-top: 68px;
+  margin-left: 10px;
+}
+
+.letras_blancas_2 {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 137px;
+  font-weight: bold;
+  margin-left: 94px;
 }
