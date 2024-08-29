@@ -886,14 +886,14 @@ td:nth-child(7) {
 .descargar3 {
   position: absolute;
   margin-top: -474px;
-  margin-left: 1084px;
+  margin-left: 1005px;
   cursor: pointer;
   padding: 5px;
   background: #002d74;
   color: white;
   border-radius: 10px;
   border: 1px solid #ffffff;
-  width: 103px;
+  width: 179px;
   text-align: center;
 }
 
@@ -911,6 +911,13 @@ td:nth-child(7) {
   margin-top: -48px;
   margin-left: 239px;
   font-size: 19px;
+}
+.instruccion2 {
+  position: absolute;
+  color: #ffffff;
+  margin-top: -48px;
+  margin-left: 344px;
+  font-size: 21px;
 }
 
 textarea {
